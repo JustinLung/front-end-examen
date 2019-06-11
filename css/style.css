@@ -1,33 +1,197 @@
+@import url("https://use.typekit.net/sgq8ucd.css");
+
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    padding: 0;
+    margin: 0;
+    font-family: alwyn-new-web, sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    background-color: firebrick;
+}
+
 h1 {
+    padding: 40px 0px 0px 0px;
     font-size: 30px;
     text-align: center;
+    color: #fff;
 }
 
 h2 {
+    padding: 0px 0px 40px 0px;
     font-size: 22px;
     text-align: center;
+    color: #fff;
 }
 
 h3 {
     font-size: 18px;
+    color: #fff;
 }
+
+.table-heading {
+    font-weight: 900;
+    font-size: 20px;
+    color: #fff;
+}
+
+.table thead tr th,
+.table tbody tr td {
+  padding: 19px 25px;
+}
+
+.table thead tr th {
+  text-align: center;
+}
+
+td {
+    color: #fff;
+    font-size: 15px;
+}
+
+tbody tr {
+    border-top: 1px black;
+}
+
+/* box 1 -- start */
+
+.box1 {
+  border: 1px solid #fff;
+  text-align: center;
+}
+
+.box1:hover {
+  background-color: black;
+  transition: 400ms ease-in-out;
+  cursor: pointer;
+}
+
+/* box 1 -- start */
+
+/* box 2 -- start */
+
+.box2 {
+  border: 1px solid #fff;
+  text-align: center;
+}
+
+.box2:hover {
+  background-color: #282828;
+  transition: 400ms ease-in-out;
+  cursor: pointer;
+}
+
+/* box 2 -- end */
+
+/* box 3 -- start */
+
+.box3 {
+
+  border: 1px solid #fff;
+  text-align: center;
+}
+
+.box3:hover {
+  background-color: #696969;
+  transition: 400ms ease-in-out;
+  cursor: pointer;
+}
+
+/* box 3 -- end */
+
+/* box 4 -- start */
+
+.box4 {
+  border: 1px solid #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.box4:hover {
+  background-color: #A9A9A9;
+  transition: 400ms ease-in-out;
+}
+
+/* box 4 -- end */
+
+/* modal window -- start */
+
+#myBtn {
+  padding: 0;
+  font-weight: 100;
+  color: white;
+  border: none;
+  background-color: transparent;
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+}
+
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaaaaa;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-heading {
+  color: black;
+}
+
+/* modal window -- end */
+
+/* afkortingen */
+
+.afkortingen {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
 
 .footer-column-one, .footer-column-two, .footer-column-three {
     color: #fff;
-    padding-top: 1em;
+    padding-top: 3.3em;
 }
 
 footer {
     background-color: #282828;
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 100;
     height: 100%;
     width: 100%;
-    position: relative;
+    margin-top: 2.5%;
 }
 
 .footer-logo {
@@ -35,11 +199,64 @@ footer {
     width: 50%;
 }
 
+/* responsive */
+
 @media only screen and (max-width: 600px) {
-    .footer-logo {
-        display: none;
-    }
     p {
         text-align: center;
     }
-} 
+    .table-wrap table,
+    .table-wrap thead,
+    .table-wrap tbody,
+    .table-wrap th,
+    .table-wrap td,
+    .table-wrap tr {
+      display: block;
+    }
+    .table-wrap thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+    .table-wrap td {
+      border: none;
+      border-bottom: 1px solid #eee;
+      position: relative;
+      padding-left: 50%!important;
+      white-space: normal;
+      text-align: left;
+    }
+    .table-wrap td:before {
+      position: absolute;
+      top: 8px;
+      left: 15px;
+      width: 45%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      text-align: left;
+      font-weight: bold;
+    }
+    .table-wrap td:first-child {
+      padding-top: 17px;
+    }
+    .table-wrap td:last-child {
+      padding-bottom: 16px;
+    }
+    .table-wrap td:first-child:before {
+      top: 17px;
+    }
+    .table-wrap td:before {
+      content: attr(data-title);
+    }
+    .table tbody tr {
+      border-top: 1px solid #ddd;
+    }
+    .table tbody tr td {
+      border: none;
+    }
+    .footer-logo {
+        display: none;
+    }
+}
+  
