@@ -1,0 +1,2 @@
+user-agent: *
+Sitemap: http://24919.hosts1.ma-cloud.nl/front-end-examen/sitemap.xml
