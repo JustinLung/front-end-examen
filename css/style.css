@@ -1,68 +1,100 @@
 @import url("https://use.typekit.net/sgq8ucd.css");
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   font-family: alwyn-new-web, sans-serif, Arial, Helvetica;
 }
 
 body {
-	background: linear-gradient(270deg, #286b92, #a31d80, #bd472c, #bd472c);
-	background-size: 600% 600%;
-	-webkit-animation: Gradient 15s ease infinite;
-	-moz-animation: Gradient 15s ease infinite;
-	animation: Gradient 15s ease infinite;
+  background: linear-gradient(270deg, #286b92, #a31d80, #bd472c, #bd472c);
+  background-size: 600% 600%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
 }
-	
-    
-@-webkit-keyframes Gradient {
-		0%{background-position:0% 50%}
-		50%{background-position:100% 50%}
-		100%{background-position:0% 50%}
-	}
-	@-moz-keyframes Gradient {
-		0%{background-position:0% 50%}
-		50%{background-position:100% 50%}
-		100%{background-position:0% 50%}
-	}
-	@keyframes Gradient { 
-		0%{background-position:0% 50%}
-		50%{background-position:100% 50%}
-		100%{background-position:0% 50%}
-	}
 
-  
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+
 h1 {
-    padding: 40px 0px 0px 0px;
-    font-size: 30px;
-    text-align: center;
-    color: #fff;
+  padding: 40px 0px 0px 0px;
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+.opleidingstraject-subheading {
+  padding: 20px;
 }
 
 h2 {
-    padding: 0px 0px 40px 0px;
-    font-size: 22px;
-    text-align: center;
-    color: #fff;
+  padding: 0px 0px 40px 0px;
+  font-size: 22px;
+  text-align: center;
+  color: #fff;
 }
 
 h3 {
-    font-size: 18px;
-    color: #fff;
+  font-size: 18px;
+  color: #fff;
 }
 
 a {
   color: white;
 }
+
 a:hover {
   color: purple;
   text-decoration: none;
 }
 
 .table-heading {
-    font-weight: 900;
-    font-size: 20px;
-    color: #fff;
+  font-weight: 900;
+  font-size: 20px;
+  color: #fff;
 }
 
 .table thead tr th,
@@ -71,7 +103,7 @@ a:hover {
 }
 
 .table {
-  width:95%;
+  width: 95%;
   position: relative;
   left: 2.5%;
 }
@@ -81,12 +113,12 @@ a:hover {
 }
 
 td {
-    color: #fff;
-    font-size: 15px;
+  color: #fff;
+  font-size: 15px;
 }
 
 tbody tr {
-    border-top: 1px black;
+  border-top: 1px black;
 }
 
 /* box 1 -- start */
@@ -152,22 +184,18 @@ tbody tr {
 
 /* modal window -- start */
 
-/* .myBtn {
-  border-right: white 1px solid;
-} */
-
 .myModal {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
-  padding-top: 100px; 
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.4);
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 
@@ -209,40 +237,44 @@ tbody tr {
 }
 
 
-.footer-column-one, .footer-column-two, .footer-column-three {
-    color: #fff;
-    padding-top: 3.3em;
+.footer-column-one,
+.footer-column-two,
+.footer-column-three {
+  color: #fff;
+  padding-top: 3.3em;
 }
 
 footer {
-    background-color: #282828;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 100;
-    height: 100%;
-    width: 100%;
-    margin-top: 2.5%;
+  background-color: #282828;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 100;
+  height: 100%;
+  width: 100%;
+  margin-top: 2.5%;
 }
 
 .footer-logo {
-    margin: 10% 0 10% 0;
-    width: 50%;
+  margin: 10% 0 10% 0;
+  width: 50%;
 }
 
 /* responsive */
 
 @media only screen and (max-width: 600px) {
-    p {
-        text-align: center;
-    }
-    .footer-logo {
-        display: none;
-    }
-    .footer-column-one {
-      padding-top: 100px;
-    }
-    .footer-column-three {
-      padding-bottom: 100px;
-    }
+  p {
+    text-align: center;
+  }
+
+  .footer-logo {
+    display: none;
+  }
+
+  .footer-column-one {
+    padding-top: 100px;
+  }
+
+  .footer-column-three {
+    padding-bottom: 100px;
+  }
 }
-  
